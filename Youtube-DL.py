@@ -5,7 +5,7 @@ import telepot
 import requests
 import pafy
 
-TOKEN = "263037647:AAGhrgr1vi9GheiC_Je90STYE67ChiT_ZvA"
+TOKEN = "1583141561:AAFoGd7qSMjiUovg-lMV2p2zL4gFOBSH9-Y"
 
 def handle(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
@@ -27,7 +27,7 @@ def handle(msg):
     		flag_VIDEO = 1
 
     if flag_URL == 0:
-    	bot.sendMessage(chat_id, 'Please enter a video link to download.')
+    	bot.sendMessage(chat_id, 'Enter the link Sir 👇🏻.')
 
     else:
         video = pafy.new(url)
